@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Valuta</title>
+    <title>Uppgifter</title>
 </head>
 <header>
     <h1>Uppgifter Moment 1</h1>
@@ -12,14 +12,14 @@
 <body>
 
     <h2>Inmata US$</h2>
-    <form action="currency.php" method="post">
+    <form action="php/currency.php" method="post">
         <label>Ange ett belopp i US$</label>
         <input type="number" name="currency">
         <input type="submit" value="Konvertera till sek">
     </form>
 
     <h2>Namn och ålder</h2>
-    <form action="person.php" method="post">
+    <form action="php/person.php" method="post">
         <label>Ange namn</label>
         <input type="text" name="name">
         <br>
@@ -30,7 +30,7 @@
     </form>
 
     <h2>Matematik-test</h2>
-    <form action="calculate.php" method="post">
+    <form action="php/calculate.php" method="post">
         <fieldset>
             <legend>Kalkylator</legend>
             <input type="number" name="n1"> +
@@ -38,10 +38,11 @@
             <br>
             <input type="submit" value="Beräkna">
         </fieldset>
-        </form>
+    </form>
 
-</body>
-
+    <h2>Namn och ålder</h2>
+    
+    <a href="php/hyperlänk.php?name=Carl&age=18">Skicka</a>
 
 </body>
 
