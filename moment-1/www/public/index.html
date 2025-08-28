@@ -41,8 +41,44 @@
     </form>
 
     <h2>Namn och ålder</h2>
-    
+
     <a href="php/hyperlänk.php?name=Carl&age=18">Skicka</a>
+
+    <h2>Quiz</h2>
+    <form action="php/quiz.php" method="post">
+        <label>I vilket språk programmerar vi i på kursen?<br>
+            <input type="radio" name="q1" value="php">PHP<br>
+            <input type="radio" name="q1" value="asp">ASP<br>
+            <input type="radio" name="q1" value="jsp">JSP<br><br>
+        </label>
+        <label>Vilket språk är ett klientskriptspråk?<br>
+            <input type="radio" name="q2" value="jsp">JSP<br>
+            <input type="radio" name="q2" value="js">JavaScript<br>
+            <input type="radio" name="q2" value="basic">Basic<br><br>
+        </label>
+        <label>Vilket är en så kallad tritonus?<br>
+            <input type="radio" name="q3" value="l3">Stor ters<br>
+            <input type="radio" name="q3" value="f5">Förminskad kvint<br>
+            <input type="radio" name="q3" value="l2">Liten sekund<br><br>
+        </label>
+        <label>Vilken är den femte kyrkotonarten?<br>
+            <input type="radio" name="q4" value="lydian">Lydisk skala<br>
+            <input type="radio" name="q4" value="phrygian">Frygisk skala<br>
+            <input type="radio" name="q4" value="mixolydian">Mixolydisk skala<br><br>
+        </label>
+        <label>Vilket album sjöng Adrian Belew på?<br>
+            <input type="radio" name="q5" value="thelahunginjeet">Discipline<br>
+            <input type="radio" name="q5" value="exiles">Lark's Tounges in Aspic<br>
+            <input type="radio" name="q5" value="epitaph">Court of the Crimson King<br><br>
+        </label>
+        <label>Vilken låt finns i albumet Beat?<br>
+            <input type="radio" name="q6" value="heat">Thela Hun Ginjeet<br>
+            <input type="radio" name="q6" value="absentlovers">Neal and Jack and Me<br>
+            <input type="radio" name="q6" value="bobby">Man with an Open Heart<br><br>
+        </label>
+        <input type="submit" value="Skicka" />
+    </form>
+
 
 </body>
 
