@@ -25,3 +25,5 @@ $hit++; // Ökar antalet besökare med 1
 file_put_contents("hit.dat", $hit); // Skriver över filen med det nya antalet besökare
 
 echo $hit;
+
+?>

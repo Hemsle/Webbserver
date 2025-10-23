@@ -1,3 +1,8 @@
+<?php
+  if (session_status() == PHP_SESSION_NONE) {
+     session_start();
+  }
+?>
 <!doctype html>
 <html lang="sv">
 
@@ -21,6 +26,9 @@
 			<aside>
 				<?php include("inc/aside.php"); ?>
 			</aside>
+			<p>
+				antal besökare: <?php include_once("count.php"); ?>
+			</p>
 		</section>
 		<!-- End leftColumn -->
 
@@ -42,7 +50,15 @@
 					case 'kontakt':
 						include('pages/kontakt.php');
 						break;
-
+					case 'login':
+						include ('pages/login.php');
+						break;
+					case 'private':
+						include ('pages/privat.php');
+						break;
+					case 'klotter':
+						include ('pages/klotter.php');
+						break;	
 					default:
 						include('pages/start.php');
 				}
@@ -54,6 +70,7 @@
 
 		<footer>
 			<?php include("inc/footer.php"); ?>
+
 		</footer>
 		<!-- End footer -->
 	</div>
